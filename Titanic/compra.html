@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Compra - Bilheteria do Titanic</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="tickets.html">Tickets</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="compra.html">Comprar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Formulário de Compra</h1>
+        <form action="confirmacao.html" method="get">
+            <label for="pagamento">Meio de Pagamento:</label>
+            <select id="pagamento" name="pagamento">
+                <option value="cartao">Cartão de Crédito</option>
+                <option value="boleto">Boleto Bancário</option>
+                <option value="paypal">PayPal</option>
+            </select><br>
+            <label for="produto">Produto:</label>
+            <select id="produto" name="produto">
+                <option value="economica">Ticket Classe Econômica</option>
+                <option value="executiva">Ticket Classe Executiva</option>
+                <option value="primeira">Ticket Primeira Classe</option>
+            </select><br>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade" required><br>
+            <button type="submit">Comprar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Contato: bilheteria@titanic.com | Telefone: (11) 1234-5678</p>
+    </footer>
+</body>
+</html>
